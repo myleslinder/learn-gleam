@@ -2,8 +2,10 @@ import gleam/string_builder
 import gleam/int
 
 // Elixir modules start with `Elixir.`
+// Can only use this if in Elixir
 // external fn inspect(a) -> a =
 //   "Elixir.IO" "inspect"
+
 pub external fn random_float() -> Float =
   "rand" "uniform"
 
@@ -22,8 +24,8 @@ fn count_down(str: string_builder.StringBuilder, from start: Int) -> String {
 }
 
 pub fn elixir_inspect() {
-  random_float()
   //   inspect("This is from Elixir!")
+  random_float()
 }
 
 fn blast_off() {
