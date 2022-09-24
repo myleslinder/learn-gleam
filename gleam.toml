@@ -1,0 +1,23 @@
+name = "first_gleam"
+version = "0.0.1"
+description = "my project description..."
+licences = ["MIT"]
+target = "erlang" # javascript
+
+
+# Fill out these fields if you intend to generate HTML documentation or publish
+# your project to the Hex package manager.
+#
+# licences = ["Apache-2.0"]
+# description = "A Gleam library..."
+# repository = { type = "github", user = "username", repo = "project" }
+# links = [{ title = "Website", href = "https://gleam.run" }]
+
+[dependencies]
+gleam_stdlib = "~> 0.23"
+
+[dev-dependencies]
+gleeunit = "~> 0.6"
+
+[javascript]
+typescript_declarations = true
